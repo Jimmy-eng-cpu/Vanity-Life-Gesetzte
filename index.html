@@ -209,7 +209,30 @@
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
+.law-entry {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 15px;
+}
+.law-entry h4 {
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+.law-desc {
+    color: #ccc;
+    font-style: italic;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+.law-penalty {
+    color: var(--accent-color); /* Neon Farbe */
+    font-weight: bold;
+    background: rgba(255, 0, 85, 0.1);
+    padding: 8px;
+    border-radius: 6px;
+    display: inline-block;
+}
     </style>
 </head>
 <body>
@@ -268,77 +291,266 @@
             </div>
         </div>
 
-        <div id="stgb" class="law-content">
-            <h2>🏛️ Strafgesetzbuch (StGB)</h2>
-            <br>
-            <div class="law-block">
-                <h3>§ 1 Körperverletzung</h3>
-                <table class="law-table">
-                    <tr><th>Tatbestand</th><th>Haft</th><th>Geld</th></tr>
-                    <tr><td>Einfache Körperverletzung</td><td>15 Monate</td><td>15.000 $</td></tr>
-                    <tr><td>Gefährliche Körperverletzung</td><td>50 Monate</td><td>55.000 $</td></tr>
-                    <tr><td>Schwere Körperverletzung</td><td>90 Monate</td><td>90.000 $</td></tr>
-                </table>
-            </div>
+     <div id="stgb" class="law-content">
+    <h2>🏛️ Strafgesetzbuch (StGB)</h2>
+    <p style="color: #888;">Gültig für das gesamte Staatsgebiet von Los Santos.</p>
+    <br>
 
-            <div class="law-block">
-                <h3>§ 2 Tötungsdelikte</h3>
-                <table class="law-table">
-                    <tr><th>Tatbestand</th><th>Haft</th><th>Geld</th></tr>
-                    <tr><td>Totschlag</td><td>160 Monate</td><td>160.000 $</td></tr>
-                    <tr><td>Mord</td><td>220 Monate</td><td>190.000 $</td></tr>
-                </table>
-            </div>
-            </div>
-
-        <div id="btmg" class="law-content">
-            <h2>📜 BtMG & Waffengesetz</h2>
-            <br>
-            <div class="law-block">
-                <h3>§ 1 Drogenbesitz (BtMG)</h3>
-                <table class="law-table">
-                    <tr><th>Tatbestand</th><th>Haft</th><th>Geld</th></tr>
-                    <tr><td>Geringe Menge (< 10g)</td><td>-</td><td>15.000 $</td></tr>
-                    <tr><td>Handelsmenge (> 10g)</td><td>70 Monate</td><td>55.000 $</td></tr>
-                </table>
-            </div>
-            <div class="law-block">
-                <h3>§ 3 Unerlaubter Waffenbesitz (WaffG)</h3>
-                <table class="law-table">
-                    <tr><th>Tatbestand</th><th>Haft</th><th>Geld</th></tr>
-                    <tr><td>Besitz Schlagstock etc.</td><td>35 Monate</td><td>35.000 $</td></tr>
-                    <tr><td>Besitz Pistolen</td><td>75 Monate</td><td>85.000 $</td></tr>
-                    <tr><td>Besitz Schwere Waffen (PDW, Tec-9)</td><td>120 Monate</td><td>150.000 $</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div id="stvo" class="law-content">
-            <h2>🛣️ Straßenverkehrsordnung (StVO)</h2>
-            <br>
-            <div class="law-block">
-                <h3>§ 2 Geschwindigkeitsüberschreitung</h3>
-                <table class="law-table">
-                    <tr><th>Tatbestand</th><th>Haft</th><th>Geld</th></tr>
-                    <tr><td>Bis 20 km/h zu schnell</td><td>-</td><td>10.000 $</td></tr>
-                    <tr><td>21 - 50 km/h zu schnell</td><td>-</td><td>35.000 $</td></tr>
-                    <tr><td>Über 50 km/h zu schnell</td><td>15 Monate</td><td>60.000 $</td></tr>
-                </table>
-            </div>
-        </div>
-
-        <div id="stsg" class="law-content">
-            <h2>🛡️ Staatsschutzgesetz (StSG)</h2>
-            <br>
-            <div class="law-block">
-                <h3>§ 1 Hochverrat</h3>
-                <p>Versuch, die Regierung gewaltsam zu stürzen.</p>
-                <p><strong>Strafe:</strong> 240 Monate Haft, 200.000 $ (Terror-Status)</p>
-            </div>
-        </div>
-
+    <h3>§ 1 Körperverletzung</h3>
+    <div class="law-entry">
+        <h4>1. Einfache Körperverletzung</h4>
+        <div class="law-desc">Wer eine andere Person körperlich misshandelt oder an der Gesundheit schädigt.</div>
+        <div class="law-penalty">Strafmaß: 15 Monate Haft, 15.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>2. Gefährliche Körperverletzung</h4>
+        <div class="law-desc">Körperverletzung mittels einer Waffe, eines gefährlichen Werkzeugs oder durch einen hinterlistigen Überfall.</div>
+        <div class="law-penalty">Strafmaß: 50 Monate Haft, 55.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>3. Schwere Körperverletzung</h4>
+        <div class="law-desc">Die Tat führt zu dauerhaften und erheblichen Schäden oder zur Invalidität des Opfers.</div>
+        <div class="law-penalty">Strafmaß: 90 Monate Haft, 90.000 $</div>
     </div>
 
+    <h3>§ 2 Tötungsdelikte</h3>
+    <div class="law-entry">
+        <h4>1. Totschlag</h4>
+        <div class="law-desc">Wer vorsätzlich einen Menschen tötet (im Affekt/ungeplant).</div>
+        <div class="law-penalty">Strafmaß: 160 Monate Haft, 160.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>2. Mord</h4>
+        <div class="law-desc">Die vorsätzliche Tötung unter besonderen erschwerenden Umständen (Heimtücke, Habgier, Mordlust).</div>
+        <div class="law-penalty">Strafmaß: 220 Monate Haft, 190.000 $</div>
+    </div>
+
+    <h3>§ 3 Nötigung & Geiselnahme</h3>
+    <div class="law-entry">
+        <h4>1. Nötigung</h4>
+        <div class="law-desc">Wer einen anderen rechtswidrig durch Gewalt oder Drohung zu einer Handlung zwingt.</div>
+        <div class="law-penalty">Strafmaß: 20 Monate Haft, 20.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>2. Freiheitsberaubung</h4>
+        <div class="law-desc">Wer einen Menschen einsperrt oder auf andere Weise seiner Freiheit beraubt.</div>
+        <div class="law-penalty">Strafmaß: 45 Monate Haft, 45.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>3. Geiselnahme</h4>
+        <div class="law-desc">Wer einen Menschen entführt, um die Staatsgewalt oder Dritte zu erpressen.</div>
+        <div class="law-penalty">Strafmaß: 150 Monate Haft, 150.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>4. Geiselnahme mit Todesfolge</h4>
+        <div class="law-desc">Führt die Geiselnahme zum Tode des Opfers.</div>
+        <div class="law-penalty">Strafmaß: 240 Monate Haft, 200.000 $</div>
+    </div>
+
+    <h3>§ 4 & 5 Eigentumsdelikte</h3>
+    <div class="law-entry">
+        <h4>Einfacher Diebstahl</h4>
+        <div class="law-desc">Wegnahme einer fremden Sache (Taschendiebstahl etc.).</div>
+        <div class="law-penalty">Strafmaß: 15 Monate Haft, 15.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>Schwerer Diebstahl</h4>
+        <div class="law-desc">Diebstahl unter erschwerenden Umständen (Einbruch, Autodiebstahl).</div>
+        <div class="law-penalty">Strafmaß: 50 Monate Haft, 50.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>Raub</h4>
+        <div class="law-desc">Wegnahme einer Sache unter Anwendung von Gewalt oder Drohung (Überfall).</div>
+        <div class="law-penalty">Strafmaß: 80 Monate Haft, 90.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>Vandalismus</h4>
+        <div class="law-desc">Großflächige oder vorsätzliche Zerstörung von öffentlichem Eigentum.</div>
+        <div class="law-penalty">Strafmaß: 20 Monate Haft, 25.000 $ + Ersatz</div>
+    </div>
+
+    <h3>§ 7 & 8 Staatsgewalt</h3>
+    <div class="law-entry">
+        <h4>Widerstand gegen die Staatsgewalt</h4>
+        <div class="law-desc">Wer sich einer Maßnahme körperlich widersetzt.</div>
+        <div class="law-penalty">Strafmaß: 40 Monate Haft, 40.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>Flucht vor der Polizei</h4>
+        <div class="law-desc">Das aktive Entziehen aus einer Kontrolle.</div>
+        <div class="law-penalty">Strafmaß: 30 Monate Haft, 30.000 $</div>
+    </div>
+</div>
+
+     <div id="btmg" class="law-content">
+    <h2>📜 Gesetz über Betäubungsmittel & Waffen</h2>
+    <br>
+
+    <h3>Teil 1: Betäubungsmittelgesetz (BtMG)</h3>
+    
+    <div class="law-entry">
+        <h4>§ 1.1 Geringe Menge (Vergehen)</h4>
+        <div class="law-desc">Besitz einer Menge, die den Eigenbedarf nicht übersteigt (unter 10 Gramm).</div>
+        <div class="law-penalty">Strafmaß: 15.000 $ (Keine Haft)</div>
+    </div>
+    <div class="law-entry">
+        <h4>§ 1.2 Handelsmenge (Verbrechen)</h4>
+        <div class="law-desc">Besitz einer Menge, die über den Eigenbedarf hinausgeht (über 10 Gramm).</div>
+        <div class="law-penalty">Strafmaß: 70 Monate Haft, 55.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>§ 2.1 Herstellung (Produktion)</h4>
+        <div class="law-desc">Wer illegale Substanzen herstellt oder gewinnt.</div>
+        <div class="law-penalty">Strafmaß: 170 Monate Haft, 150.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>§ 2.2 Gewerbsmäßiger Handel</h4>
+        <div class="law-desc">Wer Betäubungsmittel in gewerbsmäßigem Umfang veräußert.</div>
+        <div class="law-penalty">Strafmaß: 130 Monate Haft, 110.000 $</div>
+    </div>
+
+    <br><hr style="border-color:#333"><br>
+
+    <h3>Teil 2: Waffengesetz (WaffG)</h3>
+
+    <div class="law-entry">
+        <h4>§ 3.1 Illegaler Besitz (Vergehen)</h4>
+        <div class="law-desc">Besitz einer nicht tödlichen Waffe (z.B. Schlagstock, Baseballschläger).</div>
+        <div class="law-penalty">Strafmaß: 35 Monate Haft, 35.000 $ (Waffe weg)</div>
+    </div>
+    <div class="law-entry">
+        <h4>§ 3.2 Besitz verbotener Stichwaffen</h4>
+        <div class="law-desc">Besitz von Dolchen, Klappmessern, Springmessern.</div>
+        <div class="law-penalty">Strafmaß: 50 Monate Haft, 50.000 $ (Waffe weg)</div>
+    </div>
+    <div class="law-entry">
+        <h4>§ 3.3 Unerlaubter Waffenbesitz (Pistolen)</h4>
+        <div class="law-desc">Besitz einer nicht registrierten Schusswaffe (Standard Pistole).</div>
+        <div class="law-penalty">Strafmaß: 75 Monate Haft, 85.000 $ (Waffe weg)</div>
+    </div>
+    <div class="law-entry">
+        <h4>§ 3.4 Besitz "Schwere Feuerwaffen"</h4>
+        <div class="law-desc">Besitz von Gefecht PDWs, Tec-9s, Navy Revolvern etc.</div>
+        <div class="law-penalty">Strafmaß: 120 Monate Haft, 150.000 $</div>
+    </div>
+
+    <h4>§ 4 Führen und Gebrauch</h4>
+    <div class="law-entry">
+        <h4>Verdecktes Führen (Nicht Tödlich)</h4>
+        <div class="law-penalty">Strafmaß: 15 Monate Haft, 15.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>Verdecktes Führen (Standard Pistolen)</h4>
+        <div class="law-penalty">Strafmaß: 40 Monate Haft, 45.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>Verdecktes Führen (Schwere Waffen)</h4>
+        <div class="law-penalty">Strafmaß: 80 Monate Haft, 95.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>Waffenmissbrauch im Staatsgebiet</h4>
+        <div class="law-desc">Das Abfeuern einer Waffe in bewohnten Gebieten ohne Notwehr.</div>
+        <div class="law-penalty">Strafmaß: 100 Monate Haft, 120.000 $</div>
+    </div>
+</div>
+
+       <div id="stvo" class="law-content">
+    <h2>🛣️ Straßenverkehrsordnung (StVO)</h2>
+    <br>
+
+    <h3>§ 1 Allgemeine Vorschriften</h3>
+    <div class="law-entry">
+        <h4>Geisterfahrt</h4>
+        <div class="law-desc">Fahren entgegen der vorgeschriebenen Fahrtrichtung.</div>
+        <div class="law-penalty">Strafmaß: 20.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>Blockieren / Falschparken</h4>
+        <div class="law-desc">Unnötiges Blockieren von Fahrspuren oder Kreuzungen.</div>
+        <div class="law-penalty">Strafmaß: 5.000 $ + Abschleppkosten</div>
+    </div>
+
+    <h3>§ 2 Geschwindigkeitsüberschreitung</h3>
+    <div class="law-entry">
+        <h4>Geringfügig (bis 20 km/h zu schnell)</h4>
+        <div class="law-penalty">Strafmaß: 10.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>Mittel (21 - 50 km/h zu schnell)</h4>
+        <div class="law-penalty">Strafmaß: 35.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>Erheblich (über 50 km/h zu schnell)</h4>
+        <div class="law-desc">Gilt auch für Raserei in Wohngebieten.</div>
+        <div class="law-penalty">Strafmaß: 60.000 $, 15 Monate Haft + Führerscheinentzug</div>
+    </div>
+
+    <h3>§ 3 Gefährdung</h3>
+    <div class="law-entry">
+        <h4>Fahrlässige Gefährdung</h4>
+        <div class="law-desc">Riskante Manöver, Driften, Überholfehler.</div>
+        <div class="law-penalty">Strafmaß: 40.000 $ + Führerscheinentzug (Temp)</div>
+    </div>
+    <div class="law-entry">
+        <h4>Fahren ohne Fahrerlaubnis</h4>
+        <div class="law-penalty">Strafmaß: 50.000 $, 25 Monate Haft + Fahrzeugbeschlagnahmung</div>
+    </div>
+    <div class="law-entry">
+        <h4>Fahren unter Einfluss (DUI)</h4>
+        <div class="law-desc">Alkohol oder Betäubungsmittel am Steuer.</div>
+        <div class="law-penalty">Strafmaß: 75.000 $, 40 Monate Haft + Führerscheinentzug</div>
+    </div>
+    <div class="law-entry">
+        <h4>Fahrerflucht</h4>
+        <div class="law-desc">Verlassen des Unfallortes. (Strafe x2 bei Personenschaden)</div>
+        <div class="law-penalty">Strafmaß: 60.000 $, 30 Monate Haft</div>
+    </div>
+</div>
+
+        <div id="stsg" class="law-content">
+    <h2>🛡️ Staatsschutzgesetz (StSG)</h2>
+    <br>
+
+    <h3>§ 1 Verbrechen gegen die Staatsordnung</h3>
+    <div class="law-entry">
+        <h4>Hochverrat</h4>
+        <div class="law-desc">Versuch, die Verfassung zu beseitigen oder Regierung zu stürzen.</div>
+        <div class="law-penalty">Strafmaß: 240 Monate Haft, 200.000 $ (Terror-Status)</div>
+    </div>
+    <div class="law-entry">
+        <h4>Landesverrat</h4>
+        <div class="law-desc">Weitergabe von Staatsgeheimnissen an Dritte.</div>
+        <div class="law-penalty">Strafmaß: 200 Monate Haft, 180.000 $ (Terror-Status)</div>
+    </div>
+    <div class="law-entry">
+        <h4>Angriff auf staatl. Einrichtungen</h4>
+        <div class="law-desc">Sturm auf LSPD, FIB, Justizgebäude etc.</div>
+        <div class="law-penalty">Strafmaß: 160 Monate Haft, 160.000 $</div>
+    </div>
+    <div class="law-entry">
+        <h4>Angriff auf Amtsträger</h4>
+        <div class="law-desc">Tötung/Entführung von High Command, Richtern, Politikern.</div>
+        <div class="law-penalty">Strafmaß: 220 Monate Haft, 190.000 $</div>
+    </div>
+
+    <h3>§ 2 Rechtsstaatlichkeit</h3>
+    <div class="law-entry">
+        <h4>Korruption / Bestechlichkeit</h4>
+        <div class="law-desc">Annahme von Vorteilen für rechtswidrige Diensthandlungen.</div>
+        <div class="law-penalty">Strafmaß: 100 Monate Haft, 150.000 $ + Jobverlust</div>
+    </div>
+    <div class="law-entry">
+        <h4>Amtsmissbrauch</h4>
+        <div class="law-desc">Nutzung der Amtsgewalt für private Zwecke.</div>
+        <div class="law-penalty">Strafmaß: 80 Monate Haft, 100.000 $ + Rauswurf</div>
+    </div>
+    <div class="law-entry">
+        <h4>Falschaussage</h4>
+        <div class="law-desc">Lügen vor Gericht oder im Polizeiprotokoll.</div>
+        <div class="law-penalty">Strafmaß: 40 Monate Haft, 45.000 $</div>
+    </div>
+</div>
+        
     <script>
         // Einfache Funktion zum Wechseln der Tabs
         function openTab(tabName) {
@@ -366,4 +578,5 @@
         }
     </script>
 </body>
+
 </html>
